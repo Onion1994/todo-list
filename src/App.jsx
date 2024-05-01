@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "./components/Header";
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList"
+import './styles.css'
 
 export default function App () {
     const [todos, setTodos] = useState([])
@@ -19,10 +20,10 @@ export default function App () {
     }
 
     return (
-        <>
+        <div className="container">
         <Header/>
         <TodoForm addTodo={addTodo}/>
         <TodoList todos={todos} deleteTodo={deleteTodo}/>
-        </>
+        </div>
     )
 }

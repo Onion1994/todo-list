@@ -11,7 +11,7 @@ export default function TodoForm({ addTodo }) {
     }
 
 return (
-    <form onSubmit={handleSumbit}>
+    <form className='todo-form' onSubmit={handleSumbit}>
         <input 
         type="text"
         placeholder="Add a new task"
